@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --cor1: red;
+  --cor2:blue;
+  --cor3: green;
+  --cor4:brown;
+  --cor5: rgb(76, 196, 20);
+  --cor6:rgb(136, 29, 127);
+}
+.App{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.quadro{
+  border-radius: 34px;
+  box-shadow: 0px 0px 12px black;
+  flex-wrap: wrap;
+  display: flex;
+  width: 80%;
+  height: 70%;
+}
+.quadro span{
+  font-size: 28px;
+  text-transform: uppercase;
+  width: 10%;
+  height: 10%;
+  display: block;
+  color: black;
+}
+.quadro .show::before{
+  content: "";
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  z-index: -2;
+  background:  var(--cor1);
+}
